@@ -71,9 +71,7 @@ mmew_guided_recognition/
 
 ```text
 MMEW_Macro_Pipeline(Baseline)/
-│
-├── features/                       # Extracted feature storage
-├── models/                         # Baseline model assets
+
 ├── Combined_MMEW_1050d.json        # Horizontal combination of ShuffleNet and Geometric features
 ├── Shufle_MMEW_1024d.json          # 1024-dim ShuffleNetV2 facial features
 ├── Geometric_MMEW_26d.json         # 26-dim MediaPipe geometric features
@@ -123,10 +121,4 @@ python evaluate_baseline.py
 ```bash
 python evaluate_all_strategies.py
 
-```
 
-
-
-```
-
-```
