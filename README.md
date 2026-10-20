@@ -66,30 +66,6 @@ mmew_guided_recognition/
 ├── strategy_curves_comparison.png  # Generated training/validation loss and accuracy curves
 └── confusion_matrix_guided.png     # Generated normalized confusion matrix visualization
 
-## 📁 Directory Structures
-
-### 1. Proposed Model Directory (`mmew_guided_recognition/`)
-```text
-mmew_guided_recognition/
-│
-├── config/
-│   └── config.py                   # Global hyperparameters, paths, and training settings
-├── data/
-│   └── dataset.py                  # Sequence loading, augmentations, and GroupShuffleSplit
-├── losses/
-│   └── micro_losses.py             # ContrastiveWindowLoss (InfoNCE) and TemporalConsistencyLoss
-├── models/
-│   ├── vit_extractor.py            # ViT-B/16 frame-level spatial feature extractor
-│   ├── micro_encoder.py            # Short-window temporal difference BiGRU micro-encoder
-│   └── macro_guided_model.py       # Macro branch, cross-attention, adaptive gate, and classifier
-│
-├── evaluate_all_strategies.py      # Unified script running Strategy 1, Strategy 2, and comparative metrics
-├── evaluate_baseline.py            # Isolated evaluation script for the ShuffleNet + LSTM baseline
-├── pretrain_micro.py               # Stage 1 micro-encoder pretraining script
-├── strategy_curves_comparison.png  # Generated training/validation loss and accuracy curves
-└── confusion_matrix_guided.png     # Generated normalized confusion matrix visualization
-
-```
 
 ### 2. Baseline Pipeline Directory (`MMEW_Macro_Pipeline(Baseline)/`)
 
